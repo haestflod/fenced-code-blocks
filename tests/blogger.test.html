@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blogger test</title>
+</head>
+<body>
+<div class="comments" id="comments">
+    <h4>8 comments:</h4>
+    <div class="comments-content">
+        <div id="comment-holder">
+            <div id="bc_0_9C" kind="c">
+                <div id="bc_0_9CT">
+                    <div id="bc_0_8T" class="comment-thread" kind="r" t="0" u="0">
+                        <ol id="bc_0_8TB">
+                            <li id="bc_0_0B" class="comment" kind="b">
+                                <div class="avatar-image-container"><img src="//img1.blogblog.com/img/blank.gif"></div>
+                                <div id="c604682135716155167" class="comment-block">
+                                    <div id="bc_0_0M" class="comment-header" kind="m"><cite
+                                            class="user">Anonymous</cite><span class="icon user"></span><span
+                                            class="datetime secondary-text"></span>
+                                    </div>
+                                    <p id="bc_0_0MC" class="comment-content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Pellentesque elementum, nisi nec finibus pretium, diam elit tincidunt magna,
+                                        eget luctus massa ligula et nisi.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Pellentesque elementum, nisi nec finibus pretium, diam elit tincidunt magna,
+                                        eget luctus massa ligula et nisi.
+                                    </p>
+                                    <span id="bc_0_0MN" class="comment-actions secondary-text" kind="m"><span
+                                            class="item-control blog-admin "></span></span>
+                                </div>
+                                <div id="bc_0_0BR" class="comment-replies"></div>
+                                <div id="bc_0_0B_box" class="comment-replybox-single"></div>
+                            </li>
+                            <li id="bc_0_3B" class="comment" kind="b">
+                                <div class="avatar-image-container"><img
+                                        src="//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA=s35">
+                                </div>
+                                <div id="c4035244911549664133" class="comment-block">
+                                    <div id="bc_0_3M" class="comment-header" kind="m"><cite class="user"></cite><span
+                                            class="icon user"></span><span class="datetime secondary-text"></span>
+                                    </div>
+                                    <p id="bc_0_3MC" class="comment-content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum,
+                                        nisi nec finibus pretium, diam elit tincidunt magna, eget luctus massa ligula et
+                                        nisi.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum,
+                                        nisi nec finibus pretium, diam elit tincidunt magna, eget luctus massa ligula et
+                                        nisi.
+                                    </p><span id="bc_0_3MN"
+                                              class="comment-actions secondary-text"
+                                              kind="m"><span
+                                        class="item-control blog-admin "></span></span>
+                                </div>
+                                <div id="bc_0_3BR" class="comment-replies"><span id="bc_0_3b+seedlohD" kind="d"><div
+                                        id="bc_0_1T" class="comment-thread inline-thread" kind="t" t="0" u="0"><span
+                                        id="bc_0_1TT" class="thread-toggle thread-expanded" kind="g"><span id="bc_0_1TA"
+                                                                                                           class="thread-arrow"></span><span
+                                        id="bc_0_1TN" class="thread-count"><span id="bc_0_1TNT"
+                                                                                 style="display: none;"></span><span
+                                        id="bc_0_1TNU" style="display: none;"></span><div
+                                        id="bc_0_1TD" class="thread-dropContainer thread-expanded"><span
+                                        class="thread-drop"></span></div></span></span><ol id="bc_0_1TC"
+                                                                                           class="thread-chrome thread-expanded"><div><li
+                                        id="bc_0_1B" class="comment" kind="b"><div class="avatar-image-container"><img
+                                        src="//4.bp.blogspot.com/-wKkvrKq9dwg/WpfFGi6sBQI/AAAAAAAAADs/rl12g1BGJGUHaQkWGEZNSGdZ9nGE4blHwCK4BGAYYCw/s35/simba_christmas.jpg"></div><div
+                                        id="c3061565618496010218" class="comment-block"><div id="bc_0_1M"
+                                                                                             class="comment-header"
+                                                                                             kind="m"><cite
+                                        class="user"></cite><span
+                                        class="icon user"></span><span class="datetime secondary-text"></span></div><p
+                                        id="bc_0_1MC" class="comment-content">
+                                    Lorem ipsum ... dolor incantante
+                                    <br>LocalizationController.cs<br>
+                                    ----------<br>
+                                    ```
+                                    base.OnActionExecuting(context);<br><br>
+                                    // This checks that the incoming request path starts with /{culture}/
+                                    <br>bool hasCulture = LocalizationDataHandler.HasCultureInUrl(HttpContext.Request.Path);
+                                    <br>if (!hasCulture)<br>
+                                    {<br>  // Make sure permanent redirect is false<br>  // Otherwise you need to clear browser history because it'll have saved the 301 redirect for you.<br>  // Also it's probably a bad idea to permanently redirect / to something else if you in the future want to change the routing!<br>  context.Result = new RedirectResult("de/", false);<br>  // Might not need the return <br>  return;<br>}
+                                    ```
+                                    <br><br>And the function HasCultureInUrl()
+
+                                    <br>LocalizationDataHandler.cs<br>-----------<br>
+                                    ```
+                                    public static bool HasCultureInUrl(string a_url)<br>{<br>  foreach (string culture in SupportedCultures)<br>  {<br>    if (a_url.StartsWith("/" + culture + "/"))<br>    {<br>       return true;<br>    }<br>  }<br>  return false;<br>}<br>
+                                    ```</p><span
+
+                                        id="bc_0_1MN" class="comment-actions secondary-text" kind="m"><span
+                                        class="item-control blog-admin "></span></span></div><div
+                                        id="bc_0_1BR" class="comment-replies"></div><div id="bc_0_1B_box"
+                                                                                         class="comment-replybox-single"></div></li><li
+                                        id="bc_0_2B" class="comment" kind="b"><div class="avatar-image-container"><img
+                                        src="//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA=s35"></div><div
+                                        id="c3706498883869229971" class="comment-block"><div id="bc_0_2M"
+                                                                                             class="comment-header"
+                                                                                             kind="m"><cite
+                                        class="user"></cite><span
+                                        class="icon user"></span><span class="datetime secondary-text"></span></div><p
+                                        id="bc_0_2MC" class="comment-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum, nisi nec finibus pretium, diam elit tincidunt magna, eget luctus massa ligula et nisi.
+                                </p><span
+                                        id="bc_0_2MN" class="comment-actions secondary-text" kind="m"><span
+                                        class="item-control blog-admin "></span></span></div><div
+                                        id="bc_0_2BR" class="comment-replies"></div><div id="bc_0_2B_box"
+                                                                                         class="comment-replybox-single"></div></li></div><div
+                                        id="bc_0_1I" class="continue" kind="ci"></div></ol><div
+                                        id="bc_0_1T_box" class="comment-replybox-thread"></div></div></span></div>
+                                <div id="bc_0_3B_box" class="comment-replybox-single"></div>
+                            </li>
+                            <li id="bc_0_7B" class="comment" kind="b">
+                                <div class="avatar-image-container"><img
+                                        src="//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA=s35">
+                                </div>
+                                <div id="c8379319084356911647" class="comment-block">
+                                    <div id="bc_0_7M" class="comment-header" kind="m"><cite class="user"></cite><span
+                                            class="icon user"></span><span class="datetime secondary-text"></span>
+                                    </div>
+                                    <p id="bc_0_0MI" class="comment-content">
+                                        Testing xss!<br>alert("moo")<br><br>```<br>&lt;script&gt;alert("test")&lt;/script&gt;<br>```<br>Some
+                                        part 2<br>```<br>class Test {<br> public void test () {<br> string t = "&lt;script&gt;alert("test!!");&lt;/script&gt;"<br>
+                                        }<br>}<br>```</p><span id="bc_0_7MN"
+                                                               class="comment-actions secondary-text"
+                                                               kind="m"></span></span>
+                                </div>
+                                <div id="bc_0_7BR" class="comment-replies"><span id="bc_0_7b+seedlojD" kind="d"><div
+                                        id="bc_0_4T" class="comment-thread inline-thread" kind="t" t="0" u="0"><span
+                                        id="bc_0_4TT" class="thread-toggle thread-expanded" kind="g"><span id="bc_0_4TA"
+                                                                                                           class="thread-arrow"></span><span
+                                        id="bc_0_4TN" class="thread-count"><span id="bc_0_4TNT"
+                                                                                 style="display: none;"></span><span
+                                        id="bc_0_4TNU" style="display: none;"></span><div
+                                        id="bc_0_4TD" class="thread-dropContainer thread-expanded"><span
+                                        class="thread-drop"></span></div></span></span><ol id="bc_0_4TC"
+                                                                                           class="thread-chrome thread-expanded"><div><li
+                                        id="bc_0_4B" class="comment" kind="b"><div class="avatar-image-container"><img
+                                        src="//4.bp.blogspot.com/-wKkvrKq9dwg/WpfFGi6sBQI/AAAAAAAAADs/rl12g1BGJGUHaQkWGEZNSGdZ9nGE4blHwCK4BGAYYCw/s35/simba_christmas.jpg"></div><div
+                                        id="c5862913658270728166" class="comment-block"><div id="bc_0_4M"
+                                                                                             class="comment-header"
+                                                                                             kind="m"><cite
+                                        class="user"></cite><span
+                                        class="icon user"></span><span class="datetime secondary-text"></span></div>
+                                    <p
+                                            id="bc_0_4MC" class="comment-content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum, nisi nec finibus pretium, diam elit tincidunt magna, eget luctus massa ligula et nisi. ```Inline code``` Lorem ipsum ....
+                                    </p><span
+                                            id="bc_0_4MN" class="comment-actions secondary-text" kind="m"><span
+                                            class="item-control blog-admin "></span></span></div><div
+                                        id="bc_0_4BR" class="comment-replies"></div><div id="bc_0_4B_box"
+                                                                                         class="comment-replybox-single"></div></li><li
+                                        id="bc_0_5B" class="comment" kind="b"><div class="avatar-image-container"><img
+                                        src="//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA=s35"></div><div
+                                        id="c8473748361674994115" class="comment-block"><div id="bc_0_5M"
+                                                                                             class="comment-header"
+                                                                                             kind="m"><cite
+                                        class="user"></cite><span
+                                        class="icon user"></span><span class="datetime secondary-text"></span></div><p
+                                        id="bc_0_5MC" class="comment-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum, nisi nec finibus pretium, diam elit tincidunt magna, eget luctus massa ligula et nisi.</p><span
+                                        id="bc_0_5MN" class="comment-actions secondary-text" kind="m"><span
+                                        class="item-control blog-admin "></span></span></div><div
+                                        id="bc_0_5BR" class="comment-replies"></div><div id="bc_0_5B_box"
+                                                                                         class="comment-replybox-single"></div></li><li
+                                        id="bc_0_6B" class="comment" kind="b"><div class="avatar-image-container"><img
+                                        src="//4.bp.blogspot.com/-wKkvrKq9dwg/WpfFGi6sBQI/AAAAAAAAADs/rl12g1BGJGUHaQkWGEZNSGdZ9nGE4blHwCK4BGAYYCw/s35/simba_christmas.jpg"></div><div
+                                        id="c178496140349620590" class="comment-block"><div id="bc_0_6M"
+                                                                                            class="comment-header"
+                                                                                            kind="m"><cite
+                                        class="user"></cite><span
+                                        class="icon user"></span><span class="datetime secondary-text"></span></div><p
+                                        id="bc_0_6MC" class="comment-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum, nisi nec finibus pretium, diam elit tincidunt magna, eget luctus massa ligula et nisi.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum, nisi nec finibus pretium, diam elit tincidunt magna, eget luctus massa ligula et nisi.
+                                ```Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Pellentesque elementum, nisi nec finibus pretium, diam elit tincidunt magna, eget luctus massa ligula et nisi.```
+                                </p><span
+                                        id="bc_0_6MN" class="comment-actions secondary-text" kind="m"><span
+                                        class="item-control blog-admin "></span></span></div><div
+                                        id="bc_0_6BR" class="comment-replies"></div><div id="bc_0_6B_box"
+                                                                                         class="comment-replybox-single"></div></li></div><div
+                                        id="bc_0_4I" class="continue" kind="ci"></div></ol><div
+                                        id="bc_0_4T_box" class="comment-replybox-thread"></div></div></span></div>
+                                <div id="bc_0_7B_box" class="comment-replybox-single"></div>
+                            </li>
+                        </ol>
+                        <div id="bc_0_8I" class="continue" kind="ci" style="display: none;"></div>
+                    </div>
+                    <div id="bc_0_8L" class="loadmore loaded" kind="rb"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<p class="comment-footer">
+</p>
+<div class="comment-form">
+    <p>
+    </p>
+</div>
+<p></p>
+<div id="backlinks-container">
+    <div id="Blog1_backlinks-container">
+    </div>
+</div>
+
+<script>
+  window.PR = {
+    prettyPrint: function () {
+    }
+  };
+</script>
+<script src="../dist/fenced-code-blocks.js"></script>
+</div>
+</body>
+</html>
