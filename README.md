@@ -5,6 +5,8 @@ The 2 repositories that the code is from:
 * https://github.com/regexhq/gfm-code-block-regex
 * https://github.com/jonschlinkert/gfm-code-blocks
 
+**Note: If you're copy-pasting the ´´´ characters from here they are the wrong characters!**  
+
 The parser was written mainly for writing the ´´´code´´´ approach for blogger comments. 
 So it's not a completely generic solution.
 
@@ -30,4 +32,4 @@ Output:
 
 There's no support for single blocks `´html´` currently which would be wrapped only as `<code>html</code>`
 
-Note: If you're copy-pasting the ´´´ from here they are the wrong characters!   
+ 
